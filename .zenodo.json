@@ -1,0 +1,46 @@
+{
+  "title": "The Exponential Time Hypothesis Proof Checks, and Its Algorithm Is Brute Force on Every Formula That Could Exist",
+  "description": "<p>On 26 October 2026 a preprint and a machine-checked Lean proof in openai/math at commit 7ef5c0c claimed a deterministic algorithm that counts the satisfying assignments of any k-CNF formula in subexponential time, refuting the Exponential Time Hypothesis. ZKSF re-ran the published check in an isolated container. Lean's kernel accepts the proof with only the standard axioms, and so does nanoda, comparator's independently written second kernel, which the published configuration leaves off. Every input to the check is byte-identical to its published source, and ZKSF's audit finds the formal statement faithful.</p><p>The paper's own rule in Proposition 6.4 reads \"If s &lt; 2, we use exhaustive search\", and by that rule the algorithm is exhaustive search on every formula with at most 2^521,283 variables. The verified program uses its subexponential construction only above 2^639,999. Both bounds are checked in Lean against the proof's own definitions. Even with every hidden constant set to 1, the claimed bound is no better than brute force below 2^65,536. The result is correct as mathematics and changes nothing for any formula that can be written down.</p><p>The record holds the report (report.pdf), the Dockerfiles and commands for every step, the Lean file checking the thresholds, the run logs with hashes, and six certified engine runs of one Grover iteration on a small SAT formula, on CPU, GPU and TPU simulators and on IQM Garnet, AQT IBEX and Rigetti hardware. Each certificate can be checked with zcc-verify.</p>",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "ZKSF Org (Zero Kelvin Simulation Foundry)"
+    }
+  ],
+  "keywords": [
+    "exponential time hypothesis",
+    "SAT",
+    "#SAT",
+    "Lean 4",
+    "formal verification",
+    "reproducibility",
+    "comparator",
+    "nanoda",
+    "quantum computing",
+    "Grover search"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/openai/math/tree/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "relation": "reviews",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.21851380",
+      "relation": "references"
+    },
+    {
+      "identifier": "https://pypi.org/project/zcc-verify/",
+      "relation": "references",
+      "resource_type": "software"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "quantumcomputing"
+    }
+  ]
+}
