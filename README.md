@@ -15,7 +15,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Website zksf.org](https://img.shields.io/badge/website-zksf.org-6133BD)](https://zksf.org)
 [![Quantum computing mobile app on Google Play](https://img.shields.io/badge/Mobile_app-Google_Play-34A853?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.quantumcomputing.app)
-<!-- After the Zenodo record exists, add [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23732240.svg)](https://doi.org/10.5281/zenodo.23732240)
 
 ZKSF re-ran the published Lean check of the claimed subexponential #k-SAT algorithm in openai/math at commit 7ef5c0c,
 with two independent proof kernels. We proved the check's inputs untampered and measured where the algorithm's
