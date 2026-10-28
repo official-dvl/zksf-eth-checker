@@ -1,0 +1,24 @@
+{
+  "cert_id": "f385b7b3d59f4454",
+  "engine": "exact.gpu",
+  "method": "exact statevector (GPU)",
+  "shots": 1000,
+  "circuit_sha256": "99b41c00d8345c3a2075bce453e75bcb43a1a6af0dc51855bf759b4482643fee",
+  "hash_subject": "Circuit",
+  "created_at": "2026-10-28T11:12:13+00:00",
+  "verify_url": "https://api.zksf.org/certify/f385b7b3d59f4454",
+  "top_outcomes": [
+    [
+      "111",
+      502
+    ],
+    [
+      "000",
+      498
+    ]
+  ],
+  "expectation": null,
+  "protocol": "ZCC-v0.1",
+  "certificate_type": "Simulation Accuracy",
+  "exact": true
+}

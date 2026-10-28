@@ -1,0 +1,116 @@
+2026-10-28T11:05:06.873212467Z STAGE-B RUN 3 (nanoda with a 1 GiB thread stack, image zksf-eth-check:bigstack, config /work/configs/SubexponentialSAT.nanoda.json) START 2026-10-28T11:05:06Z
+2026-10-28T11:05:06.880105533Z user checker, nproc 20, network: lo 
+2026-10-28T11:05:06.887488195Z 69a3cf5660cbde5680020b3670f155321260d87d78db00fdf47013858e2ac1fa  /home/checker/bin/nanoda_bin
+2026-10-28T11:05:06.888547945Z 268259a9cd9203b64bfc076a08bd069974f872f0b86b0e7bc978abd54a3cacbe  /home/checker/bin/nanoda_bin_bigstack
+2026-10-28T11:05:09.057922390Z warning: belyi: repository '/work/math/lean/.lake/packages/belyi' has local changes
+2026-10-28T11:05:09.081547472Z warning: formal-schemes: repository '/work/math/lean/.lake/packages/formal-schemes' has local changes
+2026-10-28T11:05:09.125818317Z warning: elliptic-curves: repository '/work/math/lean/.lake/packages/elliptic-curves' has local changes
+2026-10-28T11:05:09.150083212Z warning: tempered-fundamental-groups: repository '/work/math/lean/.lake/packages/tempered-fundamental-groups' has local changes
+2026-10-28T11:05:09.212862704Z warning: oka: repository '/work/math/lean/.lake/packages/oka' has local changes
+2026-10-28T11:05:09.240495549Z warning: orbicurve-cores: repository '/work/math/lean/.lake/packages/orbicurve-cores' has local changes
+2026-10-28T11:05:09.267074131Z warning: pi1: repository '/work/math/lean/.lake/packages/pi1' has local changes
+2026-10-28T11:05:09.294667019Z warning: heights: repository '/work/math/lean/.lake/packages/heights' has local changes
+2026-10-28T11:05:09.318641401Z warning: genl: repository '/work/math/lean/.lake/packages/genl' has local changes
+2026-10-28T11:05:09.344749317Z warning: tate-curves-theta: repository '/work/math/lean/.lake/packages/tate-curves-theta' has local changes
+2026-10-28T11:05:09.379442751Z warning: iut: repository '/work/math/lean/.lake/packages/iut' has local changes
+2026-10-28T11:05:10.700424334Z Building ComparatorChallenges.SubexponentialSAT
+2026-10-28T11:05:12.752068369Z warning: belyi: repository '/work/math/lean/.lake/packages/belyi' has local changes
+2026-10-28T11:05:12.777211531Z warning: formal-schemes: repository '/work/math/lean/.lake/packages/formal-schemes' has local changes
+2026-10-28T11:05:12.821165494Z warning: elliptic-curves: repository '/work/math/lean/.lake/packages/elliptic-curves' has local changes
+2026-10-28T11:05:12.845771805Z warning: tempered-fundamental-groups: repository '/work/math/lean/.lake/packages/tempered-fundamental-groups' has local changes
+2026-10-28T11:05:12.915571993Z warning: oka: repository '/work/math/lean/.lake/packages/oka' has local changes
+2026-10-28T11:05:12.949416748Z warning: orbicurve-cores: repository '/work/math/lean/.lake/packages/orbicurve-cores' has local changes
+2026-10-28T11:05:12.979592908Z warning: pi1: repository '/work/math/lean/.lake/packages/pi1' has local changes
+2026-10-28T11:05:13.012316365Z warning: heights: repository '/work/math/lean/.lake/packages/heights' has local changes
+2026-10-28T11:05:13.041841289Z warning: genl: repository '/work/math/lean/.lake/packages/genl' has local changes
+2026-10-28T11:05:13.074687522Z warning: tate-curves-theta: repository '/work/math/lean/.lake/packages/tate-curves-theta' has local changes
+2026-10-28T11:05:13.122326322Z warning: iut: repository '/work/math/lean/.lake/packages/iut' has local changes
+2026-10-28T11:05:20.130995556Z ⚠ [8924/8924] Replayed ComparatorChallenges.SubexponentialSAT
+2026-10-28T11:05:20.131012921Z warning: ComparatorChallenges/SubexponentialSAT.lean:194:8: declaration uses `sorry`
+2026-10-28T11:05:20.138554921Z Build completed successfully (8924 jobs).
+2026-10-28T11:05:28.203655919Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from ComparatorChallenges.SubexponentialSAT
+2026-10-28T11:05:28.203690853Z Building OAI.Algorithms.SubexponentialSAT.Main
+2026-10-28T11:05:30.069590128Z warning: belyi: repository '/work/math/lean/.lake/packages/belyi' has local changes
+2026-10-28T11:05:30.095720592Z warning: formal-schemes: repository '/work/math/lean/.lake/packages/formal-schemes' has local changes
+2026-10-28T11:05:30.141273080Z warning: elliptic-curves: repository '/work/math/lean/.lake/packages/elliptic-curves' has local changes
+2026-10-28T11:05:30.166789129Z warning: tempered-fundamental-groups: repository '/work/math/lean/.lake/packages/tempered-fundamental-groups' has local changes
+2026-10-28T11:05:30.230749376Z warning: oka: repository '/work/math/lean/.lake/packages/oka' has local changes
+2026-10-28T11:05:30.262615126Z warning: orbicurve-cores: repository '/work/math/lean/.lake/packages/orbicurve-cores' has local changes
+2026-10-28T11:05:30.295676576Z warning: pi1: repository '/work/math/lean/.lake/packages/pi1' has local changes
+2026-10-28T11:05:30.329316182Z warning: heights: repository '/work/math/lean/.lake/packages/heights' has local changes
+2026-10-28T11:05:30.357849005Z warning: genl: repository '/work/math/lean/.lake/packages/genl' has local changes
+2026-10-28T11:05:30.395270060Z warning: tate-curves-theta: repository '/work/math/lean/.lake/packages/tate-curves-theta' has local changes
+2026-10-28T11:05:30.429732372Z warning: iut: repository '/work/math/lean/.lake/packages/iut' has local changes
+2026-10-28T11:05:35.860979696Z ℹ [9614/10077] Replayed OAI.Algorithms.SubexponentialSAT.SqrtLog.SquarefreeKeyMapProgram
+2026-10-28T11:05:35.860997406Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/SquarefreeKeyMapProgram.lean:537:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.Squarefree.KeyMapProgram.native_map_trace' depends on axioms: [propext,
+2026-10-28T11:05:35.860999408Z  Classical.choice,
+2026-10-28T11:05:35.861000837Z  Quot.sound]
+2026-10-28T11:05:35.861002197Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/SquarefreeKeyMapProgram.lean:538:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.Squarefree.KeyMapProgram.mapped_eq_filter_map' depends on axioms: [propext,
+2026-10-28T11:05:35.861003744Z  Classical.choice,
+2026-10-28T11:05:35.861011391Z  Quot.sound]
+2026-10-28T11:05:35.861012752Z ℹ [9659/10077] Replayed OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafStatisticsProgramAudit
+2026-10-28T11:05:35.861014149Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafStatisticsProgramAudit.lean:9:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafStatisticsProgram.program_primitive' depends on axioms: [propext,
+2026-10-28T11:05:35.861015607Z  Classical.choice,
+2026-10-28T11:05:35.861016875Z  Quot.sound]
+2026-10-28T11:05:35.861018097Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafStatisticsProgramAudit.lean:10:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafStatisticsProgram.Arity.program_primitive' depends on axioms: [propext,
+2026-10-28T11:05:35.861019554Z  Classical.choice,
+2026-10-28T11:05:35.861020778Z  Quot.sound]
+2026-10-28T11:05:35.861022022Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafStatisticsProgramAudit.lean:11:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafStatisticsProgram.Finalize.program_runsIn' depends on axioms: [propext,
+2026-10-28T11:05:35.861023461Z  Classical.choice,
+2026-10-28T11:05:35.861024667Z  Quot.sound]
+2026-10-28T11:05:35.861025876Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafStatisticsProgramAudit.lean:12:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafStatisticsProgram.Binary.lifted_eval' depends on axioms: [propext,
+2026-10-28T11:05:35.861027340Z  Classical.choice,
+2026-10-28T11:05:35.861028612Z  Quot.sound]
+2026-10-28T11:05:35.861029838Z ℹ [9695/10077] Replayed OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafStatisticsProgramPositivity
+2026-10-28T11:05:35.861031239Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafStatisticsProgramPositivity.lean:59:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafStatisticsProgram.arity_pos_of_free_pos' depends on axioms: [propext,
+2026-10-28T11:05:35.861032744Z  Classical.choice,
+2026-10-28T11:05:35.861034001Z  Quot.sound]
+2026-10-28T11:05:36.160867210Z ℹ [10628/10704] Replayed OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafQueryFrontendExact
+2026-10-28T11:05:36.160882491Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafQueryFrontendExact.lean:89:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafQueryFrontend.frontend_eval_with_inputLengths' depends on axioms: [propext,
+2026-10-28T11:05:36.160885342Z  Classical.choice,
+2026-10-28T11:05:36.160886754Z  Quot.sound]
+2026-10-28T11:05:36.160888134Z ℹ [10655/10704] Replayed OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafQueryFrontendReplay
+2026-10-28T11:05:36.160889927Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafQueryFrontendReplay.lean:179:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafQueryFrontend.frontend_avoids_outerCarried' depends on axioms: [propext,
+2026-10-28T11:05:36.160891451Z  Classical.choice,
+2026-10-28T11:05:36.160892702Z  Quot.sound]
+2026-10-28T11:05:36.160893963Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafQueryFrontendReplay.lean:180:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafQueryFrontend.frontend_eval_rebase_outerCarried' depends on axioms: [propext,
+2026-10-28T11:05:36.160901876Z  Classical.choice,
+2026-10-28T11:05:36.160903170Z  Quot.sound]
+2026-10-28T11:05:36.160904451Z ℹ [10656/10704] Replayed OAI.Algorithms.SubexponentialSAT.SqrtLog.PackingCallerProgramReplay
+2026-10-28T11:05:36.160905846Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingCallerProgramReplay.lean:77:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.PackingCallerProgram.Replay.command_avoids' depends on axioms: [propext,
+2026-10-28T11:05:36.160907316Z  Classical.choice,
+2026-10-28T11:05:36.160908548Z  Quot.sound]
+2026-10-28T11:05:36.160909803Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingCallerProgramReplay.lean:78:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.PackingCallerProgram.Replay.replay' depends on axioms: [propext,
+2026-10-28T11:05:36.160911346Z  Classical.choice,
+2026-10-28T11:05:36.160912652Z  Quot.sound]
+2026-10-28T11:05:36.460519073Z ℹ [11161/11381] Replayed OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafParametersProgramSerializationBounds
+2026-10-28T11:05:36.460536351Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafParametersProgramSerializationBounds.lean:63:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafParametersProgram.Serialization.guarded_lengths_le' depends on axioms: [propext,
+2026-10-28T11:05:36.460538770Z  Classical.choice,
+2026-10-28T11:05:36.460540263Z  Quot.sound]
+2026-10-28T11:05:36.460541633Z info: OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafParametersProgramSerializationBounds.lean:64:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafParametersProgram.Serialization.uniform_guarded_lengths_polynomial' depends on axioms: [propext,
+2026-10-28T11:05:36.460543233Z  Classical.choice,
+2026-10-28T11:05:36.460544536Z  Quot.sound]
+2026-10-28T11:05:36.861800702Z ℹ [12013/12014] Replayed OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.Final
+2026-10-28T11:05:36.861814858Z info: OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean:197:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.compiled_exact_count_and_sat' depends on axioms: [propext,
+2026-10-28T11:05:36.861816790Z  Classical.choice,
+2026-10-28T11:05:36.861818111Z  Quot.sound]
+2026-10-28T11:05:36.861819366Z info: OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean:198:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat' depends on axioms: [propext,
+2026-10-28T11:05:36.861820766Z  Classical.choice,
+2026-10-28T11:05:36.861821956Z  Quot.sound]
+2026-10-28T11:05:36.861823128Z info: OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean:199:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_eth' depends on axioms: [propext,
+2026-10-28T11:05:36.861824464Z  Classical.choice,
+2026-10-28T11:05:36.861825625Z  Quot.sound]
+2026-10-28T11:05:36.861826819Z info: OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean:200:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.sat_polynomial_space' depends on axioms: [propext,
+2026-10-28T11:05:36.861828160Z  Classical.choice,
+2026-10-28T11:05:36.861839245Z  Quot.sound]
+2026-10-28T11:05:36.861840494Z info: OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean:201:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.original_sat_main' depends on axioms: [propext,
+2026-10-28T11:05:36.861841884Z  Classical.choice,
+2026-10-28T11:05:36.861843067Z  Quot.sound]
+2026-10-28T11:05:37.071229733Z Build completed successfully (12014 jobs).
+2026-10-28T11:10:10.180669799Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from OAI.Algorithms.SubexponentialSAT.Main
+2026-10-28T11:10:10.180688826Z Running nanoda kernel on solution
+2026-10-28T11:41:30.041247240Z nanoda kernel accepts the solution
+2026-10-28T11:41:30.041324945Z Running Lean default kernel on solution.
+2026-10-28T11:41:30.041327115Z Lean default kernel accepts the solution
+2026-10-28T11:41:30.041328525Z Your solution is okay!
+2026-10-28T11:41:30.535561777Z STAGE-B RUN 3 EXIT 0 END 2026-10-28T11:41:30Z

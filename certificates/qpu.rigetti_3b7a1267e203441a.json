@@ -1,0 +1,43 @@
+{
+  "cert_id": "3b7a1267e203441a",
+  "engine": "qpu.rigetti",
+  "method": "quantum hardware (Rigetti Cepheus-1-108Q)",
+  "shots": 1000,
+  "circuit_sha256": "99b41c00d8345c3a2075bce453e75bcb43a1a6af0dc51855bf759b4482643fee",
+  "hash_subject": "Circuit",
+  "created_at": "2026-10-28T11:20:53+00:00",
+  "verify_url": "https://api.zksf.org/certify/3b7a1267e203441a",
+  "top_outcomes": [
+    [
+      "011",
+      208
+    ],
+    [
+      "111",
+      180
+    ],
+    [
+      "001",
+      147
+    ],
+    [
+      "101",
+      111
+    ],
+    [
+      "010",
+      110
+    ],
+    [
+      "110",
+      101
+    ]
+  ],
+  "expectation": null,
+  "protocol": "ZHF-v0.1",
+  "certificate_type": "Hardware Fidelity",
+  "device": "Cepheus-1-108Q",
+  "fidelity": 0.252491,
+  "fidelity_mode": "direct",
+  "note": "Hellinger fidelity of measured hardware counts vs. the exact statevector reference"
+}

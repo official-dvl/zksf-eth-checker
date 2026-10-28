@@ -1,0 +1,201 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.98kB done
+#1 DONE 0.0s
+
+#2 [auth] library/ubuntu:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/ubuntu:24.04
+#3 DONE 1.7s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [ 1/14] FROM docker.io/library/ubuntu:24.04@sha256:24737cef17f4e22b1977df7d9a05e77c4e28b7da5b8911f8d8ccda136bf3573c
+#5 DONE 0.0s
+
+#6 [ 4/14] RUN useradd -m checker
+#6 CACHED
+
+#7 [ 5/14] WORKDIR /home/checker
+#7 CACHED
+
+#8 [ 7/14] RUN curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh       | sh -s -- -y --default-toolchain leanprover/lean4:v4.34.1
+#8 CACHED
+
+#9 [ 2/14] RUN apt-get update && apt-get install -y --no-install-recommends       git curl ca-certificates build-essential pkg-config xz-utils zstd unzip python3     && rm -rf /var/lib/apt/lists/*
+#9 CACHED
+
+#10 [ 3/14] RUN curl -sSfL https://go.dev/dl/go1.24.13.linux-amd64.tar.gz | tar -C /usr/local -xz
+#10 CACHED
+
+#11 [ 6/14] RUN mkdir -p bin src
+#11 CACHED
+
+#12 [ 8/14] RUN curl -sSf https://sh.rustup.rs | sh -s -- -y --profile minimal
+#12 CACHED
+
+#13 [ 9/14] RUN cd src && git clone https://github.com/Zouuup/landrun.git && cd landrun     && git checkout ec104f6edc1e && go build -o /home/checker/bin/landrun ./cmd/landrun
+#13 CACHED
+
+#14 [10/14] RUN elan toolchain install leanprover/lean4:v4.34.1 && elan default leanprover/lean4:v4.34.1 && lean --version
+#14 4.085 info: downloading https://releases.lean-lang.org/lean4/v4.34.1/lean-4.34.1-linux.tar.zst
+#14 269.9 info: installing /home/checker/.elan/toolchains/leanprover--lean4---v4.34.1
+#14 276.1 
+#14 276.2 leanprover/lean4:v4.34.1 installed - Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+#14 276.2 
+#14 277.5 info: default toolchain set to 'leanprover/lean4:v4.34.1'
+#14 277.6 Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+#14 DONE 282.7s
+
+#15 [11/14] RUN cd src && git clone https://github.com/leanprover/lean4export.git && cd lean4export && git checkout v4.34.0     && echo "leanprover/lean4:v4.34.1" > lean-toolchain && lake build     && cp .lake/build/bin/lean4export /home/checker/bin/
+#15 0.258 Cloning into 'lean4export'...
+#15 8.460 Note: switching to 'v4.34.0'.
+#15 8.460 
+#15 8.460 You are in 'detached HEAD' state. You can look around, make experimental
+#15 8.460 changes and commit them, and you can discard any commits you make in this
+#15 8.460 state without impacting any branches by switching back to a branch.
+#15 8.460 
+#15 8.460 If you want to create a new branch to retain commits you create, you may
+#15 8.460 do so (now or later) by using -c with the switch command. Example:
+#15 8.460 
+#15 8.460   git switch -c <new-branch-name>
+#15 8.460 
+#15 8.460 Or undo this operation with:
+#15 8.460 
+#15 8.460   git switch -
+#15 8.460 
+#15 8.460 Turn off this advice by setting config variable advice.detachedHead to false
+#15 8.460 
+#15 8.460 HEAD is now at 076e8e5 chore: bump toolchain to v4.34.0 (#49)
+#15 10.40 ✔ [2/6] Built Export (1.9s)
+#15 11.20 ✔ [3/6] Built Main (818ms)
+#15 11.40 ✔ [4/6] Built Main:c.o (186ms)
+#15 12.61 ✔ [5/6] Built Export:c.o (2.2s)
+#15 13.91 ✔ [6/6] Built lean4export:exe (1.3s)
+#15 13.91 Build completed successfully (6 jobs).
+#15 DONE 14.6s
+
+#16 [12/14] RUN cd src && git clone https://github.com/leanprover/comparator.git && cd comparator && git checkout v4.34.0     && echo "leanprover/lean4:v4.34.1" > lean-toolchain && lake build     && cp .lake/build/bin/comparator /home/checker/bin/
+#16 0.264 Cloning into 'comparator'...
+#16 1.653 Note: switching to 'v4.34.0'.
+#16 1.653 
+#16 1.653 You are in 'detached HEAD' state. You can look around, make experimental
+#16 1.653 changes and commit them, and you can discard any commits you make in this
+#16 1.653 state without impacting any branches by switching back to a branch.
+#16 1.653 
+#16 1.653 If you want to create a new branch to retain commits you create, you may
+#16 1.653 do so (now or later) by using -c with the switch command. Example:
+#16 1.653 
+#16 1.653   git switch -c <new-branch-name>
+#16 1.653 
+#16 1.653 Or undo this operation with:
+#16 1.653 
+#16 1.653   git switch -
+#16 1.653 
+#16 1.653 Turn off this advice by setting config variable advice.detachedHead to false
+#16 1.653 
+#16 1.653 HEAD is now at d03acab chore: bump toolchain to v4.34.0 (#90)
+#16 1.689 info: lean4export: cloning https://github.com/leanprover/lean4export
+#16 7.773 info: lean4export: checking out revision '076e8e57707e813375e8f9da8bf989799ace9680'
+#16 8.077 ✔ [1/4] Built Comparator.Util (246ms)
+#16 8.979 ✔ [5/16] Built Comparator.Util:c.o (86ms)
+#16 10.08 ✔ [6/16] Built Export.Parse (1.2s)
+#16 10.48 ✔ [7/16] Built Comparator.Axioms (393ms)
+#16 10.78 ✔ [8/16] Built Comparator.Axioms:c.o (279ms)
+#16 10.88 ✔ [9/16] Built Comparator.Compare (472ms)
+#16 11.18 ✔ [10/16] Built Comparator (233ms)
+#16 11.18 ✔ [11/16] Built Comparator:c.o (43ms)
+#16 11.28 ✔ [12/16] Built Comparator.Compare:c.o (359ms)
+#16 12.48 ✔ [13/16] Built Main (1.3s)
+#16 13.28 ✔ [14/16] Built Export.Parse:c.o (3.2s)
+#16 13.38 ✔ [15/16] Built Main:c.o (891ms)
+#16 14.39 ✔ [16/16] Built comparator:exe (1.0s)
+#16 14.39 Build completed successfully (16 jobs).
+#16 DONE 14.7s
+
+#17 [13/14] RUN cd src && git clone https://github.com/ammkrn/nanoda_lib.git && cd nanoda_lib && git checkout 37cb87b7e6cd     && cargo build --release && cp target/release/nanoda_bin /home/checker/bin/
+#17 0.218 Cloning into 'nanoda_lib'...
+#17 7.312 Note: switching to '37cb87b7e6cd'.
+#17 7.312 
+#17 7.312 You are in 'detached HEAD' state. You can look around, make experimental
+#17 7.312 changes and commit them, and you can discard any commits you make in this
+#17 7.312 state without impacting any branches by switching back to a branch.
+#17 7.312 
+#17 7.312 If you want to create a new branch to retain commits you create, you may
+#17 7.312 do so (now or later) by using -c with the switch command. Example:
+#17 7.312 
+#17 7.312   git switch -c <new-branch-name>
+#17 7.312 
+#17 7.312 Or undo this operation with:
+#17 7.312 
+#17 7.312   git switch -
+#17 7.312 
+#17 7.312 Turn off this advice by setting config variable advice.detachedHead to false
+#17 7.312 
+#17 7.312 HEAD is now at 37cb87b Merge pull request #67 from ascrivener/telescope-one-pass
+#17 7.337     Updating crates.io index
+#17 8.715  Downloading crates ...
+#17 8.887   Downloaded autocfg v1.1.0
+#17 8.900   Downloaded chacha20 v0.10.2
+#17 8.903   Downloaded equivalent v1.0.1
+#17 8.910   Downloaded cpufeatures v0.3.1
+#17 8.952   Downloaded cfg-if v1.0.0
+#17 9.008   Downloaded rustc-hash v1.1.0
+#17 9.041   Downloaded itoa v1.0.15
+#17 9.068   Downloaded rand_core v0.10.1
+#17 9.075   Downloaded semver v1.0.27
+#17 9.081   Downloaded num-integer v0.1.47
+#17 9.181   Downloaded quote v1.0.35
+#17 9.191   Downloaded ryu v1.0.20
+#17 9.196   Downloaded unicode-ident v1.0.12
+#17 9.312   Downloaded proc-macro2 v1.0.103
+#17 9.346   Downloaded num-traits v0.2.19
+#17 9.350   Downloaded getrandom v0.4.3
+#17 9.362   Downloaded serde_core v1.0.228
+#17 9.458   Downloaded serde_derive v1.0.228
+#17 9.487   Downloaded memchr v2.7.6
+#17 9.509   Downloaded serde v1.0.228
+#17 9.515   Downloaded indexmap v2.13.0
+#17 9.534   Downloaded hashbrown v0.16.1
+#17 9.538   Downloaded num-bigint v0.5.1
+#17 9.556   Downloaded rand v0.10.2
+#17 9.592   Downloaded serde_json v1.0.145
+#17 9.703   Downloaded syn v2.0.111
+#17 9.857   Downloaded libc v0.2.180
+#17 9.926    Compiling proc-macro2 v1.0.103
+#17 9.926    Compiling unicode-ident v1.0.12
+#17 9.926    Compiling serde_core v1.0.228
+#17 9.926    Compiling autocfg v1.1.0
+#17 9.926    Compiling serde v1.0.228
+#17 9.928    Compiling serde_json v1.0.145
+#17 9.928    Compiling ryu v1.0.20
+#17 9.930    Compiling equivalent v1.0.1
+#17 9.930    Compiling memchr v2.7.6
+#17 9.930    Compiling itoa v1.0.15
+#17 9.931    Compiling hashbrown v0.16.1
+#17 9.933    Compiling semver v1.0.27
+#17 9.934    Compiling rustc-hash v1.1.0
+#17 10.14    Compiling num-traits v0.2.19
+#17 10.45    Compiling quote v1.0.35
+#17 10.51    Compiling indexmap v2.13.0
+#17 10.57    Compiling syn v2.0.111
+#17 10.69    Compiling num-integer v0.1.47
+#17 11.53    Compiling serde_derive v1.0.228
+#17 12.97    Compiling num-bigint v0.5.1
+#17 13.73    Compiling nanoda_lib v0.4.29 (/home/checker/src/nanoda_lib)
+#17 24.69     Finished `release` profile [optimized] target(s) in 17.37s
+#17 DONE 24.8s
+
+#18 [14/14] RUN printf '#!/bin/sh\nexec /home/checker/bin/landrun --best-effort "$@"\n' > /home/checker/bin/landrun-best-effort     && chmod +x /home/checker/bin/landrun-best-effort
+#18 DONE 0.3s
+
+#19 exporting to image
+#19 exporting layers
+#19 exporting layers 5.0s done
+#19 writing image sha256:ebf89fe2670d58cf377c681ddae10bd70752453150ba2c1899a410cf67dc5fab done
+#19 naming to docker.io/library/zksf-eth-check done
+#19 DONE 5.0s

@@ -1,0 +1,7 @@
+A /work
+A /work/math
+A /work/math/lean
+C /home
+C /home/checker
+C /home/checker/.elan
+C /home/checker/.elan/known-projects

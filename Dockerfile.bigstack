@@ -1,0 +1,9 @@
+# nanoda 37cb87b7e6cd with one change, its checking threads' stack raised from 16 MiB to 1 GiB (line 23 of src/lib.rs).
+# Run 2 aborted with "thread 'thread_2' has overflowed its stack" (exit 134) before reaching a verdict.
+# Built offline from the crates already in the base image. Build it with  docker build --network none -f Dockerfile.bigstack -t zksf-eth-check:bigstack .
+FROM zksf-eth-check
+RUN cd /home/checker/src/nanoda_lib \
+    && sed -i 's/pub(crate) const STACK_SIZE: usize = 16_777_216;/pub(crate) const STACK_SIZE: usize = 1_073_741_824;/' src/lib.rs \
+    && grep -n "STACK_SIZE: usize" src/lib.rs && git diff --stat \
+    && cargo build --release --offline \
+    && cp target/release/nanoda_bin /home/checker/bin/nanoda_bin_bigstack

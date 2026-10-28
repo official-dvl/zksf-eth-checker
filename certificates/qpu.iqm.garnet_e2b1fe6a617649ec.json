@@ -1,0 +1,43 @@
+{
+  "cert_id": "e2b1fe6a617649ec",
+  "engine": "qpu.iqm.garnet",
+  "method": "quantum hardware (IQM Garnet (superconducting))",
+  "shots": 560,
+  "circuit_sha256": "99b41c00d8345c3a2075bce453e75bcb43a1a6af0dc51855bf759b4482643fee",
+  "hash_subject": "Circuit",
+  "created_at": "2026-10-28T11:34:57+00:00",
+  "verify_url": "https://api.zksf.org/certify/e2b1fe6a617649ec",
+  "top_outcomes": [
+    [
+      "000",
+      148
+    ],
+    [
+      "111",
+      99
+    ],
+    [
+      "101",
+      68
+    ],
+    [
+      "001",
+      61
+    ],
+    [
+      "011",
+      58
+    ],
+    [
+      "010",
+      54
+    ]
+  ],
+  "expectation": null,
+  "protocol": "ZHF-v0.1",
+  "certificate_type": "Hardware Fidelity",
+  "device": "Garnet",
+  "fidelity": 0.436688,
+  "fidelity_mode": "direct",
+  "note": "Hellinger fidelity of measured hardware counts vs. the exact statevector reference"
+}

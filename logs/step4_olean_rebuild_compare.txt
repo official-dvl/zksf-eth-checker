@@ -1,0 +1,9 @@
+rebuilt challenge vs the one set aside (sha256):
+  lib/lean/ComparatorChallenges/SubexponentialSAT.olean: aside 79efeb692f557633  rebuilt 79efeb692f557633  IDENTICAL
+  lib/lean/ComparatorChallenges/SubexponentialSAT.ilean: aside 79d68969b8b73bd7  rebuilt 79d68969b8b73bd7  IDENTICAL
+  ir/ComparatorChallenges/SubexponentialSAT.c: aside 1da8a3671b74bd7c  rebuilt 1da8a3671b74bd7c  IDENTICAL
+=== how nanoda sets thread stacks
+/home/checker/src/nanoda_lib/src/tc.rs:148:    /// Check all declarations in this export file, spawning `num_threads` as
+/home/checker/src/nanoda_lib/src/tc.rs:158:                    thread::Builder::new()
+/home/checker/src/nanoda_lib/src/tc.rs:160:                        .stack_size(crate::STACK_SIZE)
+/home/checker/src/nanoda_lib/src/tc.rs:161:                        .spawn_scoped(sco, || loop {

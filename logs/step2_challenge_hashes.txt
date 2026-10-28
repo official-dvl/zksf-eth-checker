@@ -1,0 +1,14 @@
+=== step 2, 2026-10-27T09:43:29Z: git blob hashes of the files as they stand in the volume (read-only mount)
+a8d5ff3a3e80323675b1f2d1ea611560b783e9ca  lean/ComparatorChallenges/SubexponentialSAT.lean
+d4cc9e7074e900c1aa6371151cfd234c121a0b82  lean/ComparatorChallenges/SubexponentialSAT.json
+cd24ca2ee09fb6fe33e82400534d9e60a616125b  lean/lakefile.lean
+67d01d2717d0aaff59fb8814bb53581b961f42b4  lean/lake-manifest.json
+ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5  lean/lean-toolchain
+HEAD 7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a
+tracked files modified: 0
+=== GitHub, contents API at 7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a
+a8d5ff3a3e80323675b1f2d1ea611560b783e9ca  lean/ComparatorChallenges/SubexponentialSAT.lean
+d4cc9e7074e900c1aa6371151cfd234c121a0b82  lean/ComparatorChallenges/SubexponentialSAT.json
+cd24ca2ee09fb6fe33e82400534d9e60a616125b  lean/lakefile.lean
+67d01d2717d0aaff59fb8814bb53581b961f42b4  lean/lake-manifest.json
+ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5  lean/lean-toolchain

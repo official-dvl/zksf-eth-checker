@@ -1,0 +1,5 @@
+checks passed: clog2 matches hand values and its definition; schedule >= 2 iff 4*nu^4 <= lambda (lambda <= 2^22)
+schedule first reaches 2 at lambda = 521284, drops below 2 again, last below at lambda = 639999
+least valid Ns = 2^639999 + 1, a number with 192,659 decimal digits (about 10^192,658)
+so the verified program's cutoff is at least 2^639999 + 1 variables; Nleaf may push it higher
+for scale: about 10^80 atoms in the observable universe

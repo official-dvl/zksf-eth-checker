@@ -1,0 +1,137 @@
+{
+  "formula": "(x0 OR NOT x1) AND (x1 OR NOT x2) AND (x2 OR NOT x0)",
+  "solutions": [
+    "000",
+    "111"
+  ],
+  "exhaustive_count": 2,
+  "qasm2": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg v[3];\nqreg cl[3];\ncreg m[3];\nh v[0]; h v[1]; h v[2];\nx v[0]; ccx v[0],v[1],cl[0]; x cl[0]; x v[0];\nx v[1]; ccx v[1],v[2],cl[1]; x cl[1]; x v[1];\nx v[2]; ccx v[2],v[0],cl[2]; x cl[2]; x v[2];\nh cl[2]; ccx cl[0],cl[1],cl[2]; h cl[2];\nx v[2]; x cl[2]; ccx v[2],v[0],cl[2]; x v[2];\nx v[1]; x cl[1]; ccx v[1],v[2],cl[1]; x v[1];\nx v[0]; x cl[0]; ccx v[0],v[1],cl[0]; x v[0];\nh v[0]; h v[1]; h v[2]; x v[0]; x v[1]; x v[2];\nh v[2]; ccx v[0],v[1],v[2]; h v[2];\nx v[0]; x v[1]; x v[2]; h v[0]; h v[1]; h v[2];\nmeasure v[0] -> m[0];\nmeasure v[1] -> m[1];\nmeasure v[2] -> m[2];\n",
+  "runs": [
+    {
+      "engine": "exact.cpu",
+      "job_id": "8e79c279c89f",
+      "status": "done",
+      "shots": 1000,
+      "charged_micro": 100,
+      "counts": {
+        "111": 486,
+        "000": 514
+      },
+      "share_on_solutions": 1.0,
+      "cert_id": "818bfc6914fa4377",
+      "verify_url": "https://api.zksf.org/certify/818bfc6914fa4377",
+      "protocol": "ZCC-v0.1",
+      "certificate_type": "Simulation Accuracy",
+      "fidelity": null,
+      "zcc_verify_ok": true
+    },
+    {
+      "engine": "exact.gpu",
+      "job_id": "4c876ea8c809",
+      "status": "done",
+      "shots": 1000,
+      "charged_micro": 396,
+      "counts": {
+        "000": 498,
+        "111": 502
+      },
+      "share_on_solutions": 1.0,
+      "cert_id": "f385b7b3d59f4454",
+      "verify_url": "https://api.zksf.org/certify/f385b7b3d59f4454",
+      "protocol": "ZCC-v0.1",
+      "certificate_type": "Simulation Accuracy",
+      "fidelity": null,
+      "zcc_verify_ok": true
+    },
+    {
+      "engine": "exact.tpu",
+      "job_id": "5b93e87f9b43",
+      "status": "done",
+      "shots": 1000,
+      "charged_micro": 304950,
+      "counts": {
+        "000": 466,
+        "111": 534
+      },
+      "share_on_solutions": 1.0,
+      "cert_id": "7dbcaa36f63c4b9c",
+      "verify_url": "https://api.zksf.org/certify/7dbcaa36f63c4b9c",
+      "protocol": "ZCC-v0.1",
+      "certificate_type": "Simulation Accuracy",
+      "fidelity": null,
+      "zcc_verify_ok": true
+    },
+    {
+      "engine": "qpu.rigetti",
+      "job_id": "2cc6d19b9717",
+      "status": "done",
+      "shots": 1000,
+      "charged_micro": 725000,
+      "counts": {
+        "001": 147,
+        "000": 82,
+        "011": 208,
+        "010": 110,
+        "111": 180,
+        "110": 101,
+        "101": 111,
+        "100": 61
+      },
+      "share_on_solutions": 0.262,
+      "cert_id": "3b7a1267e203441a",
+      "verify_url": "https://api.zksf.org/certify/3b7a1267e203441a",
+      "protocol": "ZHF-v0.1",
+      "certificate_type": "Hardware Fidelity",
+      "fidelity": 0.252491,
+      "zcc_verify_ok": true
+    },
+    {
+      "engine": "qpu.iqm.garnet",
+      "job_id": "80a7c5dd1507",
+      "status": "done",
+      "shots": 560,
+      "charged_micro": 1112000,
+      "counts": {
+        "010": 54,
+        "111": 99,
+        "110": 41,
+        "100": 31,
+        "011": 58,
+        "000": 148,
+        "101": 68,
+        "001": 61
+      },
+      "share_on_solutions": 0.44107142857142856,
+      "cert_id": "e2b1fe6a617649ec",
+      "verify_url": "https://api.zksf.org/certify/e2b1fe6a617649ec",
+      "protocol": "ZHF-v0.1",
+      "certificate_type": "Hardware Fidelity",
+      "fidelity": 0.436688,
+      "zcc_verify_ok": true
+    },
+    {
+      "engine": "qpu.aqt.ibex",
+      "job_id": "5828ba372053",
+      "status": "done",
+      "shots": 100,
+      "charged_micro": 2650000,
+      "counts": {
+        "100": 13,
+        "110": 10,
+        "001": 13,
+        "111": 12,
+        "000": 32,
+        "010": 8,
+        "101": 5,
+        "011": 7
+      },
+      "share_on_solutions": 0.44,
+      "cert_id": "c752e4db92bb418a",
+      "verify_url": "https://api.zksf.org/certify/c752e4db92bb418a",
+      "protocol": "ZHF-v0.1",
+      "certificate_type": "Hardware Fidelity",
+      "fidelity": 0.415959,
+      "zcc_verify_ok": true
+    }
+  ]
+}

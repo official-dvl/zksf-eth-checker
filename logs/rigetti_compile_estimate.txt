@@ -1,0 +1,7 @@
+  return _qpu_target(device, f"Target for Amazon Braket QPU: {device.name}")
+checked 2026-10-28T11:32:27Z
+logical circuit: 6 qubits, {'x': 24, 'h': 13, 'ccx': 8, 'measure': 3} depth 25
+Rigetti native basis (as the backend uses it): ('cz', 'rx', 'rz') | device qubits 108
+  compiled to the device (optimization 1, best of 8 layouts): two-qubit gates 81, depth 151, ops {'rx': 115, 'cz': 81, 'rz': 49, 'measure': 3}
+  compiled to the device (optimization 3, best of 8 layouts): two-qubit gates 73, depth 168, ops {'rx': 114, 'rz': 75, 'cz': 73, 'measure': 3}
+two-qubit fidelities found in the device spec: 0 (none in the cached spec)

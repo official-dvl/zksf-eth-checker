@@ -1,0 +1,39 @@
+step 4 prepare 2026-10-28T10:19:46Z, user checker, no network
+challenge build files: 8
+1da8a3671b74bd7c5e92e8a1ea886749c9940ad3933ff2de0de812fd2eb5d9d5  .lake/build/ir/ComparatorChallenges/SubexponentialSAT.c
+93008a6e68e0e22f3d656f3d40078a497fbcbe62441a42dadfbf51e2c5fbc866  .lake/build/ir/ComparatorChallenges/SubexponentialSAT.c.hash
+33f4deea1253c5e57d4ee87f62090e220dcd25e41b0ba8515b6aab7b6b3de926  .lake/build/ir/ComparatorChallenges/SubexponentialSAT.setup.json
+79d68969b8b73bd74206622b36beecc068abc3a11bffdff35be31051037fce01  .lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.ilean
+5a1674a12918e919e8dc1ab71624ccb02ed1a89dcc5ec5c86f4991be4461e224  .lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.ilean.hash
+79efeb692f5576335149da9019dd5c9632926058bfc065374e231c046756b1f2  .lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.olean
+25d2ca336831252205b8b0a8ec74c09a4049e587745b68ba971c817afbae0140  .lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.olean.hash
+2b38b4c6c69e75e7baabeba1bfe604a6899ac2bb30a5a78664e72a3eb9090ba4  .lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.trace
+left in .lake/build for the challenge: 0
+moved to /work/aside:
+1da8a3671b74bd7c5e92e8a1ea886749c9940ad3933ff2de0de812fd2eb5d9d5  ./.lake/build/ir/ComparatorChallenges/SubexponentialSAT.c
+93008a6e68e0e22f3d656f3d40078a497fbcbe62441a42dadfbf51e2c5fbc866  ./.lake/build/ir/ComparatorChallenges/SubexponentialSAT.c.hash
+33f4deea1253c5e57d4ee87f62090e220dcd25e41b0ba8515b6aab7b6b3de926  ./.lake/build/ir/ComparatorChallenges/SubexponentialSAT.setup.json
+79d68969b8b73bd74206622b36beecc068abc3a11bffdff35be31051037fce01  ./.lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.ilean
+5a1674a12918e919e8dc1ab71624ccb02ed1a89dcc5ec5c86f4991be4461e224  ./.lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.ilean.hash
+79efeb692f5576335149da9019dd5c9632926058bfc065374e231c046756b1f2  ./.lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.olean
+25d2ca336831252205b8b0a8ec74c09a4049e587745b68ba971c817afbae0140  ./.lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.olean.hash
+2b38b4c6c69e75e7baabeba1bfe604a6899ac2bb30a5a78664e72a3eb9090ba4  ./.lake/build/lib/lean/ComparatorChallenges/SubexponentialSAT.trace
+nanoda config (/work/configs, outside the repo):
+{
+  "challenge_module": "ComparatorChallenges.SubexponentialSAT",
+  "solution_module": "OAI.Algorithms.SubexponentialSAT.Main",
+  "theorem_names": [
+    "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
+repo config unchanged: debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19  ComparatorChallenges/SubexponentialSAT.json
+git status of the repo (must be clean):
+(end)
+step 4 prepare END 2026-10-28T10:19:48Z

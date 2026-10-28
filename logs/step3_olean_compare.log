@@ -1,0 +1,16 @@
+step 3 compare start 2026-10-28T10:18:44Z: sha256 of every .olean under math/lean/.lake/packages, eth-work (/a) vs eth-cachecheck (/b), both read-only, no network
+a: 8926 .olean files
+b: 8926 .olean files
+only in eth-work: 0
+only in eth-cachecheck: 0
+in both: 8926; identical: 8926; different: 0
+by package (files in eth-work):
+  LeanSearchClient 4
+  Qq 14
+  aesop 132
+  batteries 192
+  importGraph 10
+  mathlib 8548
+  plausible 13
+  proofwidgets 13
+step 3 compare END 2026-10-28T10:18:56Z

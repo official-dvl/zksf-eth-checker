@@ -1,0 +1,29 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.bigstack
+#1 transferring dockerfile: 783B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/zksf-eth-check:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/library/zksf-eth-check:latest
+#4 DONE 0.1s
+
+#5 [2/2] RUN cd /home/checker/src/nanoda_lib     && sed -i 's/pub(crate) const STACK_SIZE: usize = 16_777_216;/pub(crate) const STACK_SIZE: usize = 1_073_741_824;/' src/lib.rs     && grep -n "STACK_SIZE: usize" src/lib.rs && git diff --stat     && cargo build --release --offline     && cp target/release/nanoda_bin /home/checker/bin/nanoda_bin_bigstack
+#5 0.066 23:pub(crate) const STACK_SIZE: usize = 1_073_741_824;
+#5 0.078  src/lib.rs | 2 +-
+#5 0.078  1 file changed, 1 insertion(+), 1 deletion(-)
+#5 0.257    Compiling nanoda_lib v0.4.29 (/home/checker/src/nanoda_lib)
+#5 11.99     Finished `release` profile [optimized] target(s) in 11.84s
+#5 DONE 12.0s
+
+#6 exporting to image
+#6 exporting layers 0.0s done
+#6 writing image sha256:e13cb309f7351486664aae0f5e601d642d7a575ec825ac0dc40d518981a89985 done
+#6 naming to docker.io/library/zksf-eth-check:bigstack done
+#6 DONE 0.1s
